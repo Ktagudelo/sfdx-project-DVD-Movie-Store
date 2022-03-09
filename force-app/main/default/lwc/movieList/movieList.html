@@ -1,13 +1,11 @@
 <template>
     <lightning-card>
         <template if:true={movies.data}>
-               
-            <lightning-avatar variant="circle" src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg"
-            initials="AW" fallback-icon-name="standard:person_account" alternative-text="Amy Weaver"
-            class="slds-m-right_small">
-            </lightning-avatar>
             <lightning-datatable key-field="Id" data={movies.data} columns={columns}>
-            
+                <lightning-avatar variant="circle" src="https://www.lightningdesignsystem.com/assets/images/avatar2.jpg"
+                initials="AW" fallback-icon-name="standard:person_account" alternative-text="Amy Weaver"
+                class="slds-m-right_small">
+                </lightning-avatar>
             </lightning-datatable>
         </template>
     </lightning-card>

@@ -1,0 +1,18 @@
+<template>
+    <lightning-tabset>
+        <lightning-tab label="Movies">
+            <c-movie-form></c-movie-form>
+        </lightning-tab>
+        <lightning-tab label="Categories">
+            <c-categories-form></c-categories-form>
+        </lightning-tab>
+        <lightning-tab label="Genres">
+            <c-genres-form></c-genres-form>
+        </lightning-tab>
+        <template if:true={showTabFour}>
+            <lightning-tab label="Item Four">
+                Four Content !
+            </lightning-tab>
+        </template>
+    </lightning-tabset>
+</template>
